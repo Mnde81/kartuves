@@ -30,30 +30,35 @@ function updateCountS() {
 const [countU, setCountU] = useState();
 
 function updateCountU() {
+  setGreenCount(greenCount + 1);
   setCountU('u');
 }
 
 const [countN, setCountN] = useState();
 
 function updateCountN() {
+  setGreenCount(greenCount + 1);
   setCountN('n');
 }
 
 const [countH, setCountH] = useState();
 
 function updateCountH() {
+  setGreenCount(greenCount + 1);
   setCountH('h');
 }
 
 const [countI, setCountI] = useState();
 
 function updateCountI() {
+  setGreenCount(greenCount + 1);
   setCountI('i');
 }
 
 const [countE, setCountE] = useState();
 
 function updateCountE() {
+  setGreenCount(greenCount + 1);
   setCountE('e');
 }
 
@@ -82,115 +87,134 @@ function updateCountA() {
 const [countB, setCountB] = useState();
 
 function updateCountB() {
+  setRedCount(redCount - 1);
   setCountB('r');
 }
 
 const [countC, setCountC] = useState();
 
 function updateCountC() {
+  setRedCount(redCount - 1);
   setCountC('r');
 }
 
 const [countD, setCountD] = useState();
 
 function updateCountD() {
+  setRedCount(redCount - 1);
   setCountD('r');
 }
 
 const [countF, setCountF] = useState();
 
 function updateCountF() {
+  setRedCount(redCount - 1);
   setCountF('r');
 }
 
 const [countG, setCountG] = useState();
 
 function updateCountG() {
+  setRedCount(redCount - 1);
   setCountG('r');
 }
 
 const [countJ, setCountJ] = useState();
 
 function updateCountJ() {
+  setRedCount(redCount - 1);
   setCountJ('r');
 }
 
 const [countK, setCountK] = useState();
 
 function updateCountK() {
+  setRedCount(redCount - 1);
   setCountK('r');
 }
 
 const [countL, setCountL] = useState();
 
 function updateCountL() {
+  setRedCount(redCount - 1);
   setCountL('r');
 }
 
 const [countM, setCountM] = useState();
 
 function updateCountM() {
+  setRedCount(redCount - 1);
   setCountM('r');
 }
 
 const [countO, setCountO] = useState();
 
 function updateCountO() {
+  setRedCount(redCount - 1);
   setCountO('r');
 }
 
 const [countP, setCountP] = useState();
 
 function updateCountP() {
+  setRedCount(redCount - 1);
   setCountP('r');
 }
 
 const [countQ, setCountQ] = useState();
 
 function updateCountQ() {
+  setRedCount(redCount - 1);
   setCountQ('r');
 }
 
 const [countT, setCountT] = useState();
 
 function updateCountT() {
+  setRedCount(redCount - 1);
   setCountT('r');
 }
 
 const [countV, setCountV] = useState();
 
 function updateCountV() {
+  setRedCount(redCount - 1);
   setCountV('r');
 }
 
 const [countW, setCountW] = useState();
 
 function updateCountW() {
+  setRedCount(redCount - 1);
   setCountW('r');
 }
 
 const [countX, setCountX] = useState();
 
 function updateCountX() {
+  setRedCount(redCount - 1);
   setCountX('r');
 }
 
 const [countY, setCountY] = useState();
 
 function updateCountY() {
+  setRedCount(redCount - 1);
   setCountY('r');
 }
 
 const [countZ, setCountZ] = useState();
 
 function updateCountZ() {
+  setRedCount(redCount - 1);
   setCountZ('r');
 }
 
 
-
+let losses = 0;
+let wins = 0;
 let imageClass = 1;
-let message = 'Game in progress';
+let message = 'Game';
 
 if (redCount === 6) {
   imageClass = image1;
@@ -216,13 +240,16 @@ if (redCount === 1) {
   imageClass = image6;
 }
 
-if (redCount === 0) {
+if (redCount <= 0) {
   imageClass = image7;
-  message = 'You lost!'
+  message = 'You lost!';
+  losses = losses + 1;
 }
 
-if (greenCount === 8) {
+
+if (greenCount >= 6) {
   message = 'You won!'
+  wins = wins + 1;
 }
 
 
@@ -231,8 +258,8 @@ if (greenCount === 8) {
     <main>
       <div className="message">{message}</div>
       <div className="results">
-        <div className="wins">Wins: {greenCount}</div>
-        <div className="losses">Losses: 0</div>
+        <div className="wins">Wins: {wins}</div>
+        <div className="losses">Losses: {losses}</div>
         <div className="lives">Lives: {redCount}</div>
       </div>
       <img className='image' src={imageClass} alt="image1" />      
