@@ -59,6 +59,18 @@ main {
 }
 
 .image {
-  width: 200px;
-  
+  width: 200px;  
+}
+
+.wins {
+  color: green;
+}
+
+.losses {
+  color: red;
+}
+
+.message {
+  font-size: 20px;
+  margin-bottom: 10px;
 }

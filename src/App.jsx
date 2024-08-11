@@ -1,5 +1,11 @@
 
 import image1 from './img/image1.png';
+import image2 from './img/image2.png';
+import image3 from './img/image3.png';
+import image4 from './img/image4.png';
+import image5 from './img/image5.png';
+import image6 from './img/image6.png';
+import image7 from './img/image7.png';
 
 
 function App() { 
@@ -7,7 +13,12 @@ function App() {
   return (
     <>
     <main>
-      <img className='image' src={image1} alt="image1" />
+      <div className="message">You win!</div>
+      <div className="results">
+        <div className="wins">Wins: 0</div>
+        <div className="losses">Losses: 0</div>
+      </div>
+      <img className='image' src={image7} alt="image1" />
       <div className="word">
         <div className="letter">S</div>
         <div className="letter">U</div>
