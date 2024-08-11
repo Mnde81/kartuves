@@ -55,7 +55,7 @@ main {
   width: 20px;
   height: 20px;
   text-align: center;
-  background-color: aqua;
+  background-color: white;
 }
 
 .image {
@@ -73,4 +73,43 @@ main {
 .message {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.s {
+  background-color: greenyellow; 
+}
+
+.u {
+  background-color: greenyellow; 
+}
+
+.n  {
+  background-color: greenyellow; 
+}
+
+.h  {
+  background-color: greenyellow; 
+}
+
+.i  {
+  background-color: greenyellow; 
+}
+
+.e  {
+  background-color: greenyellow; 
+}
+
+.r  {
+  background-color: red; 
+}
+
+
+.keyboard > div {
+  border: 1px solid black;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+
 }
