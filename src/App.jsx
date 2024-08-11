@@ -1,33 +1,50 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+
+function App() { 
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    
+      <div className="keyboard">
+        <div className="key">A</div>
+        <div className="key">B</div>
+        <div className="key">C</div>
+        <div className="key">D</div>
+        <div className="key">E</div>
+        <div className="key">F</div>
+        <div className="key">G</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="keyboard">
+        <div className="key">H</div>
+        <div className="key">I</div>
+        <div className="key">J</div>
+        <div className="key">K</div>
+        <div className="key">L</div>
+        <div className="key">M</div>
+        <div className="key">N</div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="keyboard">
+        <div className="key">O</div>
+        <div className="key">P</div>
+        <div className="key">Q</div>
+        <div className="key">R</div>
+        <div className="key">S</div>
+        <div className="key">T</div>
+        <div className="key">U</div>
+      </div>
+      <div className="keyboard">
+        <div className="key">V</div>
+        <div className="key">W</div>
+        <div className="key">X</div>
+        <div className="key">Y</div>
+        <div className="key">Z</div>       
+      </div>
+      
+    
+     
     </>
   )
 }
