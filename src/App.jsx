@@ -1,13 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import image1 from './img/image1.png';
 
 
 function App() { 
 
   return (
     <>
-    
+    <main>
+      <img className='image' src={image1} alt="image1" />
+      <div className="word">
+        <div className="letter">S</div>
+        <div className="letter">U</div>
+        <div className="letter">N</div>
+        <div className="letter">S</div>
+        <div className="letter">H</div>
+        <div className="letter">I</div>
+        <div className="letter">N</div>
+        <div className="letter">E</div>        
+      </div>    
       <div className="keyboard">
         <div className="key">A</div>
         <div className="key">B</div>
@@ -42,6 +52,7 @@ function App() {
         <div className="key">Y</div>
         <div className="key">Z</div>       
       </div>
+      </main>
       
     
      
