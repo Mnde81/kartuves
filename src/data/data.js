@@ -10,14 +10,4 @@ export const data = [
       seventh: 'n',
       eigth: 'e',
     },
-    // {
-    //     first: 'm',
-    //     second: 'o',
-    //     third: 'o',
-    //     fourth: 'n',
-    //     fifth: 'h',
-    //     sixth: 'i',
-    //     seventh: 'n',
-    //     eigth: 'e',
-    //   },
   ];

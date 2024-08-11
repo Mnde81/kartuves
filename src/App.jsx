@@ -1,5 +1,4 @@
 
-// import { WordGuess } from './components/word/WordGuess';
 import { useState } from "react";
 import { data } from './data/data';
 import image1 from './img/image1.png';
@@ -12,26 +11,6 @@ import image7 from './img/image7.png';
 
 
 
-// export function WordGuess(params) {
-//   return (  
-      
-//       <section className="word">
-//            {params.data.map((item, index) => (
-//               <div className="word" key={index}>
-//                   <div className="{countA}">{item.first}</div>
-//                   <div className="letter">{item.second}</div>
-//                   <div className="letter">{item.third}</div>
-//                   <div className="letter">{item.fourth}</div>
-//                   <div className="letter">{item.fifth}</div>
-//                   <div className="letter">{item.sixth}</div>
-//                   <div className="letter">{item.seventh}</div>
-//                   <div className="letter">{item.eigth}</div>
-//               </div>  
-//     ))}
-//       </section>
-//   );
-
-// }
 
 
 
@@ -39,9 +18,12 @@ import image7 from './img/image7.png';
 
 function App() { 
 
+const [greenCount, setGreenCount] = useState(0);
+
 const [countS, setCountS] = useState();
 
 function updateCountS() {
+  setGreenCount(greenCount + 1);
   setCountS('s');
 }
 
@@ -75,15 +57,25 @@ function updateCountE() {
   setCountE('e');
 }
 
+
+
+
+
+const [redCount, setRedCount] = useState(6);
+
 const [countR, setCountR] = useState();
 
-function updateCountR() {
+function updateCountR() {  
+  setRedCount(redCount - 1);
   setCountR('r');
+
+  
 }
 
 const [countA, setCountA] = useState();
 
 function updateCountA() {
+  setRedCount(redCount - 1);
   setCountA('r');
 }
 
@@ -196,26 +188,65 @@ function updateCountZ() {
 }
 
 
+
+let imageClass = 1;
+let message = 'Game in progress';
+
+if (redCount === 6) {
+  imageClass = image1;
+}
+
+if (redCount === 5) {
+  imageClass = image2;
+}
+
+if (redCount === 4) {
+  imageClass = image3;
+}
+
+if (redCount === 3) {
+  imageClass = image4;
+}
+
+if (redCount === 2) {
+  imageClass = image5;
+}
+
+if (redCount === 1) {
+  imageClass = image6;
+}
+
+if (redCount === 0) {
+  imageClass = image7;
+  message = 'You lost!'
+}
+
+if (greenCount === 8) {
+  message = 'You won!'
+}
+
+
   return (
     <>
     <main>
-      <div className="message">You win!</div>
+      <div className="message">{message}</div>
       <div className="results">
-        <div className="wins">Wins: {countS}</div>
+        <div className="wins">Wins: {greenCount}</div>
         <div className="losses">Losses: 0</div>
+        <div className="lives">Lives: {redCount}</div>
       </div>
-      <img className='image' src={image7} alt="image1" />      
-        {/* <WordGuess data={data}/>    */}
-        <div className="word">
-                    <div className="letter">{countS}</div>
-                    <div className="letter">{countU}</div>
-                    <div className="letter">{countN}</div>
-                    <div className="letter">{countS}</div>
-                    <div className="letter">{countH}</div>
-                    <div className="letter">{countI}</div>
-                    <div className="letter">{countN}</div>
-                    <div className="letter">{countE}</div>
-                </div>  
+      <img className='image' src={imageClass} alt="image1" />      
+        
+      <div className="word">
+        <div className="letter">{countS}</div>
+        <div className="letter">{countU}</div>
+        <div className="letter">{countN}</div>
+        <div className="letter">{countS}</div>
+        <div className="letter">{countH}</div>
+        <div className="letter">{countI}</div>
+        <div className="letter">{countN}</div>
+        <div className="letter">{countE}</div>
+      </div>  
        
       <div className="keyboard">
         <div onClick={updateCountA} className={countA}>A</div>
