@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { data } from './data/data';
 import image1 from './img/image1.png';
 import image2 from './img/image2.png';
 import image3 from './img/image3.png';
@@ -243,13 +242,47 @@ if (redCount === 1) {
 if (redCount <= 0) {
   imageClass = image7;
   message = 'You lost!';
-  losses = losses + 1;
+  losses = losses + 1;  
 }
 
 
 if (greenCount >= 6) {
   message = 'You won!'
   wins = wins + 1;
+}
+
+
+
+function restartGame() { 
+  setRedCount(6);
+  setGreenCount(0);
+  setCountS('');
+  setCountR('');
+  setCountU('');
+  setCountN('');
+  setCountH('');
+  setCountI('');
+  setCountE('');
+  setCountA('');
+  setCountB('');
+  setCountC('');
+  setCountD('');
+  setCountF('');
+  setCountG('');
+  setCountJ('');
+  setCountK('');
+  setCountL('');
+  setCountM('');
+  setCountO('');
+  setCountP('');
+  setCountQ('');
+  setCountR('');
+  setCountT('');
+  setCountV('');
+  setCountW('');
+  setCountX('');
+  setCountY('');
+  setCountZ('');
 }
 
 
@@ -308,10 +341,10 @@ if (greenCount >= 6) {
         <div onClick={updateCountX} className={countX}>X</div>
         <div onClick={updateCountY} className={countY}>Y</div>
         <div onClick={updateCountZ} className={countZ}>Z</div>       
-      </div>
-      </main>
-      
-    
+      </div>      
+      <button onClick={restartGame} className="btn">Click to restart</button>
+    </main>
+         
      
     </>
   )
