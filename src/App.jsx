@@ -255,7 +255,7 @@ if (greenCount >= 6) {
 
 function restartGame() { 
   setRedCount(6);
-  setGreenCount(0);
+  setGreenCount(0); 
   setCountS('');
   setCountR('');
   setCountU('');
@@ -284,6 +284,7 @@ function restartGame() {
   setCountY('');
   setCountZ('');
 }
+
 
 
   return (

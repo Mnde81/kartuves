@@ -1,8 +1,75 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Kartuves
 
-Currently, two official plugins are available:
+_game project_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+
+## 🌟 About
+
+This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
+
+Site published at: https://mnde81.github.io/kartuves/
+
+
+## 🎯 Project features/goals
+
+-   Github pages
+-   React
+-   Javascript
+-   CSS files
+-   CSS flex
+-   responsive design
+
+## 🧰 Getting Started
+
+### 💻 Prerequisites
+
+Node.js - _download and install_
+
+```
+https://nodejs.org
+```
+
+Git - _download and install_
+
+```
+https://git-scm.com
+```
+
+### 🏃 Run locally
+
+Would like to run this project locally? Open terminal and follow these steps:
+
+1. Clone the repo
+    ```sh
+    git clone https://github.com/Mnde81/kartuves.git
+    ```
+2. Install NPM packages
+    ```sh
+    npm i
+    ```
+    or
+    ```sh
+    npm install
+    ```
+3. Run the server
+    ```sh
+    npm run dev
+    ```
+
+### 🧪 Running tests
+
+There is no tests for this project.
+
+## 🎅 Authors
+
+Mindaugas: [Github](https://github.com/Mnde81)
+
+## ⚠️ License
+
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+## 🔗 Other resources
+
+No other resources.
