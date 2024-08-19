@@ -285,6 +285,86 @@ function restartGame() {
   setCountZ('');
 }
 
+window.addEventListener('keyup', (e) => {
+  if (e.key === 'a') {
+    updateCountA();
+  }
+  if (e.key === 'b') {
+    updateCountB();
+  }
+  if (e.key === 'c') {
+    updateCountC();
+  }
+  if (e.key === 'd') {
+    updateCountD();
+  }
+  if (e.key === 'e') {
+    updateCountE();
+  }
+  if (e.key === 'f') {
+    updateCountF();
+  }
+  if (e.key === 'g') {
+    updateCountG();
+  }
+  if (e.key === 'h') {
+    updateCountH();
+  }
+  if (e.key === 'i') {
+    updateCountI();
+  }
+  if (e.key === 'j') {
+    updateCountJ();
+  }
+  if (e.key === 'k') {
+    updateCountK();
+  }
+  if (e.key === 'l') {
+    updateCountL();
+  }
+  if (e.key === 'm') {
+    updateCountM();
+  }
+  if (e.key === 'n') {
+    updateCountN();
+  }
+  if (e.key === 'o') {
+    updateCountO();
+  }
+  if (e.key === 'p') {
+    updateCountP();
+  }
+  if (e.key === 'q') {
+    updateCountQ();
+  }
+  if (e.key === 'r') {
+    updateCountR();
+  }
+  if (e.key === 's') {
+    updateCountS();
+  }
+  if (e.key === 't') {
+    updateCountT();
+  }
+  if (e.key === 'u') {
+    updateCountU();
+  }
+  if (e.key === 'v') {
+    updateCountV();
+  }
+  if (e.key === 'w') {
+    updateCountW();
+  }
+  if (e.key === 'x') {
+    updateCountX();
+  }
+  if (e.key === 'y') {
+    updateCountY();
+  }
+  if (e.key === 'z') {
+    updateCountZ();
+  }
+});
 
 
   return (
